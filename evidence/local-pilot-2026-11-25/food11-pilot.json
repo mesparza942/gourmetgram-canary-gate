@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "dataset": "Food-11",
+  "source_release": "https://www.kaggle.com/api/v1/datasets/download/trolukovich/food11-image-dataset?datasetVersionNumber=1",
+  "archive_bytes": 1163229310,
+  "archive_etag": "\"60f2421b07588bc6475d358c43b4fec0\"",
+  "split": "validation",
+  "phase": "pilot",
+  "seed": 5306,
+  "sampling": "first two distinct hashes per class, ranked by SHA-256 of 5306:archive_member",
+  "samples_per_category": 2,
+  "images": [
+    {
+      "image_id": "698e30b46bd78ea3bf11b2ea722042503d57e744a3c5718f3e42c2cc8c3feeb9",
+      "category_id": 0,
+      "bytes": 71301,
+      "relative_path": "validation/class_00/7.jpg",
+      "archive_member": "validation/Bread/7.jpg"
+    },
+    {
+      "image_id": "5f67b710f8aa3210ca05d9eed5a1d85d4e77b76bc1a76067186cadb7920d9ec7",
+      "category_id": 0,
+      "bytes": 54740,
+      "relative_path": "validation/class_00/204.jpg",
+      "archive_member": "validation/Bread/204.jpg"
+    },
+    {
+      "image_id": "960606ae8997b0172dbfe8090f452153e645778e2aaaa9020a94a286df88f526",
+      "category_id": 1,
+      "bytes": 59504,
+      "relative_path": "validation/class_01/95.jpg",
+      "archive_member": "validation/Dairy product/95.jpg"
+    },
+    {
+      "image_id": "97d81de0835ea3ac5a544fe9b676f79426b60cd58232b3850933ac9be3acf4b5",
+      "category_id": 1,
+      "bytes": 1384831,
+      "relative_path": "validation/class_01/27.jpg",
+      "archive_member": "validation/Dairy product/27.jpg"
+    },
+    {
+      "image_id": "2b39783ff3d81fd19be24816b3a86e7885245f42cf30952f45ebeca22a7333e7",
+      "category_id": 2,
+      "bytes": 42969,
+      "relative_path": "validation/class_02/345.jpg",
+      "archive_member": "validation/Dessert/345.jpg"
+    },
+    {
+      "image_id": "683e3d08efafd4f68e32f06698b158ca327156bb6ec65e7655c7baf8fb86caef",
+      "category_id": 2,
+      "bytes": 38897,
+      "relative_path": "validation/class_02/290.jpg",
+      "archive_member": "validation/Dessert/290.jpg"
+    },
+    {
+      "image_id": "0e84fc475f1a9015c9aeaeb6dff821874a65c70e91665ffa0fc46a305d5bc38b",
+      "category_id": 3,
+      "bytes": 66702,
+      "relative_path": "validation/class_03/167.jpg",
+      "archive_member": "validation/Egg/167.jpg"
+    },
+    {
+      "image_id": "86ed3136ae6720688602c7a62baa4f95472864057c7922cf7a8f9ae8d161097d",
+      "category_id": 3,
+      "bytes": 59323,
+      "relative_path": "validation/class_03/23.jpg",
+      "archive_member": "validation/Egg/23.jpg"
+    },
+    {
+      "image_id": "4340149fb9e478916cdb1067d0f749762dfbc7a8c25f5cea14ad2bc5504ab78f",
+      "category_id": 4,
+      "bytes": 50137,
+      "relative_path": "validation/class_04/133.jpg",
+      "archive_member": "validation/Fried food/133.jpg"
+    },
+    {
+      "image_id": "d6653d639148ba17f9328d2d6890f28bdf098cc8ee0cf9fde1eb30c923b3e2bf",
+      "category_id": 4,
+      "bytes": 48151,
+      "relative_path": "validation/class_04/183.jpg",
+      "archive_member": "validation/Fried food/183.jpg"
+    },
+    {
+      "image_id": "055309ccde50b577254f0ed82e28af53ac0c2336c0a8e82feb1559f42a0af37a",
+      "category_id": 5,
+      "bytes": 57396,
+      "relative_path": "validation/class_05/220.jpg",
+      "archive_member": "validation/Meat/220.jpg"
+    },
+    {
+      "image_id": "cbeb0c8a3c35e3cb16509660a4d6744473ef03bc655325a8dd2e79ea1041dfce",
+      "category_id": 5,
+      "bytes": 19903,
+      "relative_path": "validation/class_05/57.jpg",
+      "archive_member": "validation/Meat/57.jpg"
+    },
+    {
+      "image_id": "c57d4e9530ad781fece17b9ffde11dd9b1d23eaae82c17c7566082a8ad7537e5",
+      "category_id": 6,
+      "bytes": 63193,
+      "relative_path": "validation/class_06/137.jpg",
+      "archive_member": "validation/Noodles-Pasta/137.jpg"
+    },
+    {
+      "image_id": "2bbbb6021c3bfb66f042cb86d83ae78b35d77295ce3fbbd7ea86852f952600a9",
+      "category_id": 6,
+      "bytes": 46168,
+      "relative_path": "validation/class_06/74.jpg",
+      "archive_member": "validation/Noodles-Pasta/74.jpg"
+    },
+    {
+      "image_id": "564c549488ea1a739de1bb368bca0cd3a8a1b7dafbe9442c84eab11fcf9e59db",
+      "category_id": 7,
+      "bytes": 55678,
+      "relative_path": "validation/class_07/40.jpg",
+      "archive_member": "validation/Rice/40.jpg"
+    },
+    {
+      "image_id": "7da846084a0ee2ded7d496459462ef8ef8ea62d91aa7942320c4557120d9383d",
+      "category_id": 7,
+      "bytes": 220249,
+      "relative_path": "validation/class_07/49.jpg",
+      "archive_member": "validation/Rice/49.jpg"
+    },
+    {
+      "image_id": "5f70fa6d9768bc9c23295e2ceeaa5d0fb6cba66b5ca430ef05f045df13332b8b",
+      "category_id": 8,
+      "bytes": 54916,
+      "relative_path": "validation/class_08/113.jpg",
+      "archive_member": "validation/Seafood/113.jpg"
+    },
+    {
+      "image_id": "89d13a164cfcc90b64aaee2f62d1c4bec1d5405f940d66a28c92522716e4ee75",
+      "category_id": 8,
+      "bytes": 49631,
+      "relative_path": "validation/class_08/215.jpg",
+      "archive_member": "validation/Seafood/215.jpg"
+    },
+    {
+      "image_id": "64d5b5e3f69af74f52c2893c0ce4c7d52c2d7fcc1e13eb27cd94aaadb6d7c694",
+      "category_id": 9,
+      "bytes": 21444,
+      "relative_path": "validation/class_09/355.jpg",
+      "archive_member": "validation/Soup/355.jpg"
+    },
+    {
+      "image_id": "571c1b407e13800674ae35ddd2f1df83a617a6f6e889d19c483e89abfb3ce480",
+      "category_id": 9,
+      "bytes": 43497,
+      "relative_path": "validation/class_09/339.jpg",
+      "archive_member": "validation/Soup/339.jpg"
+    },
+    {
+      "image_id": "dbe367831b0ec78a5b2b0e8ed841a599160108135b0a0f6d97adb98c97384d0f",
+      "category_id": 10,
+      "bytes": 1436638,
+      "relative_path": "validation/class_10/96.jpg",
+      "archive_member": "validation/Vegetable-Fruit/96.jpg"
+    },
+    {
+      "image_id": "0e541c5b37a5fcea8da634aa2497078d5c9419cc18562340e31a8c1f809e8bfa",
+      "category_id": 10,
+      "bytes": 599631,
+      "relative_path": "validation/class_10/132.jpg",
+      "archive_member": "validation/Vegetable-Fruit/132.jpg"
+    }
+  ]
+}

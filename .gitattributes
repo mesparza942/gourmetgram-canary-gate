@@ -1,0 +1,2 @@
+# Decision records include input hashes, so preserve the original evidence bytes.
+evidence/** -text whitespace=cr-at-eol

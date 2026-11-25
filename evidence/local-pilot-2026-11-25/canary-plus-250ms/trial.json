@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trial_id": "canary-plus-250ms",
+  "source": "local",
+  "phase": "pilot",
+  "started_at_utc": "2026-11-25T21:41:40.700319+00:00",
+  "workload_sha256": "1627c6ce896faf0b9c4d0eedc8fcef9572a160127bbe7a98523c6d1985f4f7be",
+  "workload_seed": 5306,
+  "target_rps": 7,
+  "warmup_s": 4,
+  "measurement_s": 30,
+  "gate_elapsed_s": "34.319757625",
+  "deployments": {
+    "production": {
+      "model_version": "sha256:60029ea441f23be7d67aefc348ac173188ec5879337930ef0a5b1bdd70b85337",
+      "image_id": "local-app:d8e01993ef9a62e79039ed6162c104eb571a4205",
+      "measurement_start_s": "4.161187750"
+    },
+    "canary": {
+      "model_version": "sha256:60029ea441f23be7d67aefc348ac173188ec5879337930ef0a5b1bdd70b85337",
+      "image_id": "local-app:d8e01993ef9a62e79039ed6162c104eb571a4205",
+      "measurement_start_s": "4.161187750"
+    }
+  },
+  "version_checks": {
+    "production": true,
+    "canary": true
+  },
+  "collector": {
+    "rate": 7,
+    "workers": 4,
+    "timeout": 3
+  }
+}

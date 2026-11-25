@@ -1,0 +1,101 @@
+{
+  "trial_id": "canary-plus-250ms",
+  "source": "local",
+  "phase": "pilot",
+  "workload_sha256": "1627c6ce896faf0b9c4d0eedc8fcef9572a160127bbe7a98523c6d1985f4f7be",
+  "deployments": {
+    "production": {
+      "model_version": "sha256:60029ea441f23be7d67aefc348ac173188ec5879337930ef0a5b1bdd70b85337",
+      "image_id": "local-app:d8e01993ef9a62e79039ed6162c104eb571a4205",
+      "measurement_start_s": "4.161187750"
+    },
+    "canary": {
+      "model_version": "sha256:60029ea441f23be7d67aefc348ac173188ec5879337930ef0a5b1bdd70b85337",
+      "image_id": "local-app:d8e01993ef9a62e79039ed6162c104eb571a4205",
+      "measurement_start_s": "4.161187750"
+    }
+  },
+  "measurement_s": 30,
+  "target_rps": 7,
+  "gate_elapsed_s": "34.319757625",
+  "decision": "FAIL",
+  "reasons": [
+    "canary p95_latency_ms violated its limit"
+  ],
+  "policy": {
+    "version": "m2-pilot-v1",
+    "p95_latency_ratio_max": "1.10",
+    "failure_rate_increase_max": "0.01",
+    "failure_rate_max": "0.02",
+    "successful_rps_ratio_min": "0.90",
+    "min_http_responses": 200,
+    "timeout_s": 300,
+    "offered_rate_tolerance": "0.05",
+    "max_start_lag_ms": 100
+  },
+  "metrics": {
+    "production": {
+      "scheduled": 210,
+      "offered": 210,
+      "successes": 210,
+      "http_responses": 210,
+      "outcomes": {
+        "http_error": 0,
+        "invalid_response": 0,
+        "network_error": 0,
+        "not_sent": 0,
+        "success": 210,
+        "timeout": 0
+      },
+      "offered_rps": "7",
+      "p95_latency_ms": "74.589666",
+      "failure_rate": "0",
+      "successful_rps": "7"
+    },
+    "canary": {
+      "scheduled": 210,
+      "offered": 210,
+      "successes": 210,
+      "http_responses": 210,
+      "outcomes": {
+        "http_error": 0,
+        "invalid_response": 0,
+        "network_error": 0,
+        "not_sent": 0,
+        "success": 210,
+        "timeout": 0
+      },
+      "offered_rps": "7",
+      "p95_latency_ms": "340.289625",
+      "failure_rate": "0",
+      "successful_rps": "7"
+    }
+  },
+  "checks": [
+    {
+      "metric": "p95_latency_ms",
+      "operator": "<=",
+      "canary": "340.289625",
+      "limit": "82.04863260",
+      "passed": false
+    },
+    {
+      "metric": "failure_rate",
+      "operator": "<=",
+      "canary": "0",
+      "limit": "0.01",
+      "passed": true
+    },
+    {
+      "metric": "successful_rps",
+      "operator": ">=",
+      "canary": "7",
+      "limit": "6.30",
+      "passed": true
+    }
+  ],
+  "evidence": {
+    "trial_sha256": "96149c2fc0bec3df24b0b6df3d9d64c84d87180d1be06b921e0fbe7882479593",
+    "requests_sha256": "a799b20d24830344ef30b0997fe52ba459eeaac5f75567d8885ed39a02b42b3d"
+  }
+}
